@@ -104,3 +104,8 @@ e = (13/14-6/7)/(2*math.e-5.4)
 # float_e = division(subtraction(division(13, 14), division(6, 7)), subtraction(multiplication(2, math.e), 5.4))
 float_e = division(subtraction(13/14, 6/7), subtraction(2*math.e, 5.4))
 print("e)", float_e, absolute_error(e, float_e), relative_error(e, float_e))
+
+f = -10*math.pi+6*math.e-3/62
+float_f = subtraction(addition(multiplication(-10, math.pi), multiplication(6, math.e)), division(3, 62))
+# float_f = subtraction(addition(-10*math.pi, 6*math.e), 3/62)
+print("f)", float_f, absolute_error(f, float_f), relative_error(f, float_f))
